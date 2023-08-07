@@ -1,0 +1,28 @@
+body {
+    background-image:url('background.webp');
+    background-size:100%;
+}
+@font-face {
+    font-family: "Burger Free";
+    src: url("Burger Free.otf");
+}
+h1 {
+    font-family:'Burger Free';
+    color:white;
+    font-size:100px;
+    width:100%;
+    text-align:center;
+}
+.prank {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    display: block;
+    border: none;
+    color: #0000003f;
+    height: 15px;
+    border-radius: 50px;
+    font-family: 'Burger Free';
+    cursor:text;
+    padding:15px;
+}
