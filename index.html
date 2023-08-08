@@ -1,0 +1,135 @@
+﻿<html>
+
+<head>
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="icon" href="icon.png" />
+
+    <title>Semi-New Tab</title>
+
+</head>
+
+<body>
+
+
+
+    <div style="height:100px;"></div>
+
+    <h1>Gooble</h1>
+
+    <div style="height:40px;"></div>
+
+    <div class="prank" id=" searchbar">Search Gooble or type a URL</div>
+
+    <script type="text/javascript">
+        let searchbar = document.querySelector(".prank");
+        let alertNum = 0;
+        let audio = new Audio('freebird.mp3')
+        let body = document.querySelector("body");
+        let randomTime = 0;
+
+        searchbar.addEventListener("click", () => {
+
+            // text changes onclick
+
+            if (searchbar.innerHTML == "Don't Say I didn't warn you") {
+                searchbar.innerHTML = "..."
+                randomize()
+                if (randomTime == 5) {
+                    setTimeout(playAudio, 4000)
+                    setTimeout(switchText, 5000)
+                    setTimeout(switchBackground, 5000)
+                }
+                if (randomTime == 6) {
+                    setTimeout(playAudio, 5000)
+                    setTimeout(switchText, 6000)
+                    setTimeout(switchBackground, 6000)
+                }
+                if (randomTime == 7) {
+                    setTimeout(playAudio, 6000)
+                    setTimeout(switchText, 7000)
+                    setTimeout(switchBackground, 7000)
+                }
+                if (randomTime == 8) {
+                    setTimeout(playAudio, 7000)
+                    setTimeout(switchText, 8000)
+                    setTimeout(switchBackground, 8000)
+                }
+                if (randomTime == 9) {
+                    setTimeout(playAudio, 8000)
+                    setTimeout(switchText, 9000)
+                    setTimeout(switchBackground, 9000)
+                }
+                if (randomTime == 10) {
+                    setTimeout(playAudio, 9000)
+                    setTimeout(switchText, 10000)
+                    setTimeout(switchBackground, 10000)
+                }
+                if (randomTime == 11) {
+                    setTimeout(playAudio, 10000)
+                    setTimeout(switchText, 11000)
+                    setTimeout(switchBackground, 11000)
+                }
+                if (randomTime == 12) {
+                    setTimeout(playAudio, 11000)
+                    setTimeout(switchText, 12000)
+                    setTimeout(switchBackground, 12000)
+                }
+                if (randomTime == 13) {
+                    setTimeout(playAudio, 12000)
+                    setTimeout(switchText, 13000)
+                    setTimeout(switchBackground, 13000)
+                }
+                if (randomTime == 14) {
+                    setTimeout(playAudio, 13000)
+                    setTimeout(switchText, 14000)
+                    setTimeout(switchBackground, 14000)
+                }
+                if (randomTime == 15) {
+                    setTimeout(playAudio, 14000)
+                    setTimeout(switchText, 15000)
+                    setTimeout(switchBackground, 15000)
+                }
+                
+            }
+            if (searchbar.innerHTML == "I said stop") {
+                searchbar.innerHTML = "Don't Say I didn't warn you"
+            }
+            if (searchbar.innerHTML == "Stop it") {
+                searchbar.innerHTML = "I said stop"
+            }
+            if (searchbar.innerHTML == "ok but stop clicking me, this isn't a search bar") {
+                searchbar.innerHTML = "Stop it"
+            }
+            if (searchbar.innerHTML == "Haha got you!") {
+                searchbar.innerHTML = "ok but stop clicking me, this isn't a search bar";
+            }     
+            if (searchbar.innerHTML == "Search Gooble or type a URL") {
+                searchbar.innerHTML = "Haha got you!"
+                searchbar.style.color = "#000000e1";
+            }
+
+            function playAudio() {
+                audio.play();
+                audio.volume = 1;
+            }
+            function switchText() {
+                searchbar.innerHTML = "o_o"
+            }
+            function switchBackground() {
+                body.style.backgroundImage = "url('background.webp')"
+            }
+        });
+
+        function randomize() {
+            randomTime = Math.random() * (15 - 5) + 5;
+            randomTime = Math.round(randomTime);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
